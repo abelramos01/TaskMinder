@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
         document.body.classList.add('loaded');//... ele adiciona a class loaded para uma transição suave
     });
 
+    //Botao da navbar
+
+    document.getElementById('menu-btn').addEventListener('click', function() {//evento click baseado no elemento id
+        const navLinks = document.getElementById('nav-links');//pega o elemento nav links e guarda na variavel
+        navLinks.classList.toggle('active');//muda a classe para active
+    });
+
     //Inicio da pagina de cadastro
 
     // Capturar os dados do formulário de cadastro
