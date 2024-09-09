@@ -70,18 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
         });
     }
 
-
-    const pesquisa2 = document.getElementById('pesquisa_container');//pega o container 
-
-    if (pesquisa2) {//verifica se ele está presente na página
-        //evento baseado no submit do botão
-        pesquisa2.addEventListener('submit', function (event) {
-            event.preventDefault();//previne o comportamento padrao para melhor controle
-            pesquisar();
-        });
-    }
-
-
     //Função pesquisar
 
     function removerAcentos(texto) {//funçao para remover o acento da pesquisa
