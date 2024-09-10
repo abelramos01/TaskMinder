@@ -7,10 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
 
     //Botao da navbar
 
-    document.getElementById('menu-btn').addEventListener('click', function() {//evento click baseado no elemento id
-        const navLinks = document.getElementById('nav-links');//pega o elemento nav links e guarda na variavel
-        navLinks.classList.toggle('active');//muda a classe para active
-    });
+    const menuBtn = document.getElementById('menu-btn');
+    if (menuBtn) { // Verifica se o botão existe no DOM
+        menuBtn.addEventListener('click', function() { 
+            const navLinks = document.getElementById('nav-links'); // pega o elemento nav links e guarda na variavel
+            if (navLinks) { // Verifica se o navLinks existe
+                navLinks.classList.toggle('active'); // muda a classe para active
+            }
+        });
+    }
 
     //Inicio da pagina de cadastro
 
