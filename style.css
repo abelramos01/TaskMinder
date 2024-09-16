@@ -267,36 +267,31 @@ button:hover {
     outline: none;
 }
 
+
 table {
     width: 80%;
-    border-collapse: collapse;
+    border-spacing: 0;
     margin-top: 20px;
-    border-radius: 20px;
-}
-
-table, th, td {
-    border: 2px solid #afabab;
-    color: #5e4444;
-    text-align: center;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que o border-radius seja aplicado corretamente */
+    border: 2px solid #FF7F50;
 }
 
 th, td {
     padding: 8px;
     text-align: left;
-    background-color: #5e4444;
+    color: #5e4444;
+    background-color: #f2f2f2;
     
 }
 
 th {
-    background-color: #f2f2f2;
-    border: solid #afabab 2px;
-    
+    background-color: #FF7F50;
+    color: white;
 }
 
 td {
-    border: solid #afabab 2px;
     background-color: #f2f2f2;
-    
 }
 
 .all_link {
